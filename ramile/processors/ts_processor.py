@@ -4,8 +4,8 @@ from ramile.processors.c_style_comment_block_filter import CStyleCommentBlockFil
 from ramile.processors.double_slash_comment_filter import DoubleSlashCommentFilter
 
 
-class JsProcessor(FileProcessorBase):
-    expected_extensions = [".js", ".jsx", ".vue", ".wpy"]
+class TsProcessor(FileProcessorBase):
+    expected_extensions = [".ts", ".tsx", ".mts", ".cts"]
 
     def __init__(self):
         self.filters.append(BlankLineFilter())

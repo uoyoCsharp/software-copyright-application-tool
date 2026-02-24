@@ -1,6 +1,11 @@
 {
+	// Overwrites the root directory of source codes to avoid Ramile process from the project root.
 	"source_root": "",
+	// Sets the directories/files to be ignored by Ramile. "ignore" paths should be sub directories/files under source_root. 
+	// Any directories/files starting with any one of the "ignore" items will be ignored. Wildcars are not supported.
 	"ignore": [],
+	// Sets the exclusive filters (which means, all other extensions will NOT be processed) for file extensions. By default all files will be processed.
 	"filters": [],
+	// Sets the total lines to extract
 	"lines_to_extract": 3000
 }

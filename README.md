@@ -2,6 +2,7 @@ This project branch out from [Ramile](https://github.com/luxel/ramile), which is
 
 We added some enchancement to the original Ramile:
 - Support for extracting C# source code
+- Support for typescript source code
 
 # Ramile
 

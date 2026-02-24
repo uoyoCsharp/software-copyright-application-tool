@@ -70,6 +70,7 @@ class FileProcessor(object):
     def __build_processors(self):
         """Register and cache all supported file processors."""
         self.__cache_processor(JsProcessor())
+        self.__cache_processor(TsProcessor())
         self.__cache_processor(JavaProcessor())
         self.__cache_processor(PhpProcessor())
         self.__cache_processor(HtmlProcessor())
@@ -93,6 +94,7 @@ class FileProcessor(object):
 from ramile.processors.blank_line_filter import BlankLineFilter
 from ramile.processors.comment_block_filter import CommentBlockFilter
 from ramile.processors.js_processor import JsProcessor
+from ramile.processors.ts_processor import TsProcessor
 from ramile.processors.java_processor import JavaProcessor
 from ramile.processors.php_processor import PhpProcessor
 from ramile.processors.html_processor import HtmlProcessor
